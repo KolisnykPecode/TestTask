@@ -19,3 +19,17 @@ struct User: Codable {
         case thumbnailURL = "thumbnailUrl"
     }
 }
+
+struct UserViewModel {
+    let userID: Int
+    let name: String
+    let url, thumbnailURL: String
+    var userPosts: [PostViewModel]?
+    
+    init(model: User) {
+        self.userID = model.userID
+        self.name = model.name
+        self.url = model.url
+        self.thumbnailURL = model.thumbnailURL
+    }
+}

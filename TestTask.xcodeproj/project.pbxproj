@@ -22,6 +22,15 @@
 		9023F1AE292CED28009FFD05 /* Router.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9023F1AD292CED28009FFD05 /* Router.swift */; };
 		9023F1B0292CF276009FFD05 /* MainEndPoint.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9023F1AF292CF276009FFD05 /* MainEndPoint.swift */; };
 		9023F1B2292CF428009FFD05 /* NetworkManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9023F1B1292CF428009FFD05 /* NetworkManager.swift */; };
+		9023F1B4292D045A009FFD05 /* UserTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9023F1B3292D045A009FFD05 /* UserTableViewCell.swift */; };
+		9023F1B6292D08D0009FFD05 /* UserHomeViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9023F1B5292D08D0009FFD05 /* UserHomeViewModel.swift */; };
+		9023F1B8292D4AB2009FFD05 /* UIImageView + extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9023F1B7292D4AB2009FFD05 /* UIImageView + extension.swift */; };
+		9023F1BB292D4E80009FFD05 /* Coordinator + UserDetail.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9023F1BA292D4E80009FFD05 /* Coordinator + UserDetail.swift */; };
+		9023F1BD292D4EE3009FFD05 /* UserDetailsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9023F1BC292D4EE3009FFD05 /* UserDetailsViewController.swift */; };
+		9023F1BF292D5049009FFD05 /* BaseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9023F1BE292D5049009FFD05 /* BaseViewController.swift */; };
+		9023F1C1292D53F4009FFD05 /* UserDetailsTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9023F1C0292D53F4009FFD05 /* UserDetailsTableViewCell.swift */; };
+		9023F1C4292D6819009FFD05 /* UserDetailsHeaderFooterView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9023F1C3292D6819009FFD05 /* UserDetailsHeaderFooterView.swift */; };
+		9023F1C6292D6FEB009FFD05 /* UserDetailsViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9023F1C5292D6FEB009FFD05 /* UserDetailsViewModel.swift */; };
 		903CBD26292CD52100483273 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 903CBD25292CD52100483273 /* AppDelegate.swift */; };
 		903CBD28292CD52100483273 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 903CBD27292CD52100483273 /* SceneDelegate.swift */; };
 		903CBD2F292CD52200483273 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 903CBD2E292CD52200483273 /* Assets.xcassets */; };
@@ -44,6 +53,15 @@
 		9023F1AD292CED28009FFD05 /* Router.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Router.swift; sourceTree = "<group>"; };
 		9023F1AF292CF276009FFD05 /* MainEndPoint.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainEndPoint.swift; sourceTree = "<group>"; };
 		9023F1B1292CF428009FFD05 /* NetworkManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkManager.swift; sourceTree = "<group>"; };
+		9023F1B3292D045A009FFD05 /* UserTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserTableViewCell.swift; sourceTree = "<group>"; };
+		9023F1B5292D08D0009FFD05 /* UserHomeViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserHomeViewModel.swift; sourceTree = "<group>"; };
+		9023F1B7292D4AB2009FFD05 /* UIImageView + extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIImageView + extension.swift"; sourceTree = "<group>"; };
+		9023F1BA292D4E80009FFD05 /* Coordinator + UserDetail.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Coordinator + UserDetail.swift"; sourceTree = "<group>"; };
+		9023F1BC292D4EE3009FFD05 /* UserDetailsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserDetailsViewController.swift; sourceTree = "<group>"; };
+		9023F1BE292D5049009FFD05 /* BaseViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseViewController.swift; sourceTree = "<group>"; };
+		9023F1C0292D53F4009FFD05 /* UserDetailsTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserDetailsTableViewCell.swift; sourceTree = "<group>"; };
+		9023F1C3292D6819009FFD05 /* UserDetailsHeaderFooterView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserDetailsHeaderFooterView.swift; sourceTree = "<group>"; };
+		9023F1C5292D6FEB009FFD05 /* UserDetailsViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserDetailsViewModel.swift; sourceTree = "<group>"; };
 		903CBD22292CD52100483273 /* TestTask.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TestTask.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		903CBD25292CD52100483273 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		903CBD27292CD52100483273 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -75,7 +93,7 @@
 		9023F187292CD91B009FFD05 /* Protocols */ = {
 			isa = PBXGroup;
 			children = (
-				9023F190292CD9CA009FFD05 /* Protocols */,
+				9023F191292CD9E9009FFD05 /* Coordinator.swift */,
 			);
 			path = Protocols;
 			sourceTree = "<group>";
@@ -83,6 +101,7 @@
 		9023F188292CD920009FFD05 /* Pressentation */ = {
 			isa = PBXGroup;
 			children = (
+				9023F1C2292D67FF009FFD05 /* Views */,
 				9023F18C292CD974009FFD05 /* Cells */,
 				9023F18B292CD950009FFD05 /* ViewControllers */,
 				9023F18A292CD948009FFD05 /* Coordinators */,
@@ -94,6 +113,8 @@
 		9023F189292CD942009FFD05 /* ViewModels */ = {
 			isa = PBXGroup;
 			children = (
+				9023F1B5292D08D0009FFD05 /* UserHomeViewModel.swift */,
+				9023F1C5292D6FEB009FFD05 /* UserDetailsViewModel.swift */,
 			);
 			path = ViewModels;
 			sourceTree = "<group>";
@@ -102,6 +123,7 @@
 			isa = PBXGroup;
 			children = (
 				9023F18E292CD9AF009FFD05 /* MainCoordinator.swift */,
+				9023F1BA292D4E80009FFD05 /* Coordinator + UserDetail.swift */,
 			);
 			path = Coordinators;
 			sourceTree = "<group>";
@@ -110,6 +132,8 @@
 			isa = PBXGroup;
 			children = (
 				9023F184292CD6CC009FFD05 /* UserHomeViewController.swift */,
+				9023F1BC292D4EE3009FFD05 /* UserDetailsViewController.swift */,
+				9023F1BE292D5049009FFD05 /* BaseViewController.swift */,
 			);
 			path = ViewControllers;
 			sourceTree = "<group>";
@@ -117,6 +141,8 @@
 		9023F18C292CD974009FFD05 /* Cells */ = {
 			isa = PBXGroup;
 			children = (
+				9023F1B3292D045A009FFD05 /* UserTableViewCell.swift */,
+				9023F1C0292D53F4009FFD05 /* UserDetailsTableViewCell.swift */,
 			);
 			name = Cells;
 			sourceTree = "<group>";
@@ -129,17 +155,10 @@
 			path = Resources;
 			sourceTree = "<group>";
 		};
-		9023F190292CD9CA009FFD05 /* Protocols */ = {
-			isa = PBXGroup;
-			children = (
-				9023F191292CD9E9009FFD05 /* Coordinator.swift */,
-			);
-			path = Protocols;
-			sourceTree = "<group>";
-		};
 		9023F195292CDAA0009FFD05 /* Extensions */ = {
 			isa = PBXGroup;
 			children = (
+				9023F1B7292D4AB2009FFD05 /* UIImageView + extension.swift */,
 			);
 			path = Extensions;
 			sourceTree = "<group>";
@@ -191,6 +210,14 @@
 				9023F1AF292CF276009FFD05 /* MainEndPoint.swift */,
 			);
 			path = EndPoint;
+			sourceTree = "<group>";
+		};
+		9023F1C2292D67FF009FFD05 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				9023F1C3292D6819009FFD05 /* UserDetailsHeaderFooterView.swift */,
+			);
+			path = Views;
 			sourceTree = "<group>";
 		};
 		903CBD19292CD52100483273 = {
@@ -296,18 +323,27 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				9023F1BB292D4E80009FFD05 /* Coordinator + UserDetail.swift in Sources */,
+				9023F1C1292D53F4009FFD05 /* UserDetailsTableViewCell.swift in Sources */,
 				9023F1A0292CE2E1009FFD05 /* EndPointType.swift in Sources */,
 				9023F185292CD6CC009FFD05 /* UserHomeViewController.swift in Sources */,
+				9023F1BF292D5049009FFD05 /* BaseViewController.swift in Sources */,
 				9023F18F292CD9AF009FFD05 /* MainCoordinator.swift in Sources */,
 				9023F1B0292CF276009FFD05 /* MainEndPoint.swift in Sources */,
 				9023F197292CDBB1009FFD05 /* User.swift in Sources */,
 				9023F1AA292CEC40009FFD05 /* JSONParameterEncoder.swift in Sources */,
 				9023F192292CD9E9009FFD05 /* Coordinator.swift in Sources */,
+				9023F1BD292D4EE3009FFD05 /* UserDetailsViewController.swift in Sources */,
 				9023F1A6292CE4E2009FFD05 /* ParameterEncoding.swift in Sources */,
+				9023F1B8292D4AB2009FFD05 /* UIImageView + extension.swift in Sources */,
 				9023F1AE292CED28009FFD05 /* Router.swift in Sources */,
+				9023F1C4292D6819009FFD05 /* UserDetailsHeaderFooterView.swift in Sources */,
 				9023F1A2292CE3A7009FFD05 /* HTTPMethod.swift in Sources */,
+				9023F1C6292D6FEB009FFD05 /* UserDetailsViewModel.swift in Sources */,
+				9023F1B4292D045A009FFD05 /* UserTableViewCell.swift in Sources */,
 				9023F1B2292CF428009FFD05 /* NetworkManager.swift in Sources */,
 				9023F1A4292CE44E009FFD05 /* HTTPTask.swift in Sources */,
+				9023F1B6292D08D0009FFD05 /* UserHomeViewModel.swift in Sources */,
 				9023F1A8292CE5B6009FFD05 /* URLParameterEncoder.swift in Sources */,
 				903CBD26292CD52100483273 /* AppDelegate.swift in Sources */,
 				9023F199292CDC41009FFD05 /* Post.swift in Sources */,

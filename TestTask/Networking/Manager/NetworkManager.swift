@@ -9,6 +9,8 @@ import Foundation
 
 struct NetworkManager {
     
+    static let shared = NetworkManager()
+    
     private let router = Router<ReqeustApi>()
     enum Result<T, E> {
         case success(T)
@@ -39,6 +41,32 @@ struct NetworkManager {
             }
         }
     }
+    
+    func getUsersPost(completion: @escaping (Result<[Post]?, String?>) -> Void) {
+        router.request(.posts) { data, response, error in
+            if let error {
+                completion(.failure(error.localizedDescription))
+            }
+            if let response = response as? HTTPURLResponse {
+                let result = self.handleNetworkResponse(response)
+                
+                switch result {
+                case .success(_):
+                    guard let data else { return }
+                    do {
+                        let users = try JSONDecoder().decode([Post].self, from: data)
+                        completion(.success(users))
+                    } catch {
+                        completion(.failure("error"))
+                    }
+                
+                case .failure(let error):
+                    completion(.failure(error))
+                }
+            }
+        }
+    }
+
     
     fileprivate func handleNetworkResponse(_ response: HTTPURLResponse) -> Result<Bool,String> {
         switch response.statusCode {
